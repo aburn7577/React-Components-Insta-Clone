@@ -19,7 +19,7 @@ const App = () => {
   // This state is the source of truth for the data inside the app. You won't be needing dummyData anymore.
   // To make the search bar work (which is stretch) we'd need another state to hold the search term.
   //const [search, setSearch] = useState()
-// eslint-disable-next-line
+
   const likePost = postId => {
     setPosts(posts.map(postEvent => {
       return postEvent.id === postId ? {...postEvent, likes: postEvent.likes + 1} : {...postEvent}
@@ -39,7 +39,7 @@ const App = () => {
     <div className='App'>
       {/* Add SearchBar and Posts here to render them */}
       <SearchBar />
-      <Posts post={posts} likePost={likePost}/>
+      <Posts posts={posts} likePost={likePost}/>
       {/* Check the implementation of each component, to see what props they require, if any! */}
     </div>
   );
