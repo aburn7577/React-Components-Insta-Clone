@@ -22,9 +22,10 @@ const Post = props => {
         />
       </div>
       {/* Is LikeSection getting all the props it needs to work correctly? */}
-      <LikeSection likePost={() => likePost(post.id)} numberOfLikes= {post.likes}/>
+      <LikeSection likePost={() => likePost(post.id)}/>
       {/* Comments also wants its props! */}
-      <Comments comments = {post.comments}/>
+      <Comments/> 
+            {/*what is the props in the folder = {state.what i'm looking for}*/}
     </div>
   );
 };
