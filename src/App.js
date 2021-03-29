@@ -22,7 +22,7 @@ const App = () => {
 
   const likePost = postId => {
     setPosts(posts.map(postEvent => {
-      return postEvent.id === postId ? {...postEvent, likes: postEvent.likes + 1} : {...postEvent}
+      return postEvent.id === postId ? {...postEvent, likes: postEvent.likes + 1} : postEvent
     }))
     /*
       -This function serves the purpose of increasing the number of likes by one, of the post with a given id.

@@ -13,7 +13,7 @@ const Posts = (props) => {
         return (
           <Post
           key={postObj.id}
-          details={postObj}
+          post={postObj}
           likePost={likePost}
           />
         )
